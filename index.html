@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="id" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f4f4ef" />
+    <meta name="description" content="Portofolio David Kurniawan — UI/UX Designer dan Front-end Developer." />
+    <title>David Kurniawan — Portofolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Navigasi utama">
+        <a class="brand" href="#beranda" aria-label="David Kurniawan, ke beranda">
+          <span class="brand__mark"><span class="brand__letter">D</span><span class="brand__dot" aria-hidden="true">.</span></span>
+          <span class="brand__name">david<span>kurniawan</span></span>
+        </a>
+
+        <div class="sidebar__label">MENU</div>
+        <nav class="primary-nav">
+          <a class="nav-link is-active" href="#beranda" data-section="beranda">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3.5 10 8.5-7 8.5 7v10a1 1 0 0 1-1 1h-5.2v-6.4h-4.6V21H4.5a1 1 0 0 1-1-1V10Z" /></svg>
+            <span>Beranda</span><span class="nav-link__arrow">↗</span>
+          </a>
+          <a class="nav-link" href="#tentang" data-section="tentang">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.5-3.2 3.2-5.2 7-5.2s6.5 2 7 5.2" /></svg>
+            <span>Tentang saya</span><span class="nav-link__arrow">↗</span>
+          </a>
+          <a class="nav-link" href="#karya" data-section="karya">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"/></svg>
+            <span>Karya pilihan</span><span class="nav-link__arrow">↗</span>
+          </a>
+          <a class="nav-link" href="#kontak" data-section="kontak">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4.5 7 7.5 5.7L19.5 7" /></svg>
+            <span>Kontak</span><span class="nav-link__arrow">↗</span>
+          </a>
+        </nav>
+
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div class="breadcrumb"><span>PORTOFOLIO</span><i>/</i><span id="current-page">BERANDA</span></div>
+          <div class="topbar__actions">
+            <button class="icon-button theme-toggle" type="button" aria-label="Ganti ke tema gelap" title="Ganti tema">
+              <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2.5v2m0 15v2m9.5-9.5h-2m-15 0h-2m16.2-6.7-1.4 1.4M6.7 17.3l-1.4 1.4m13.4 0-1.4-1.4M6.7 6.7 5.3 5.3"/></svg>
+              <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.3 15.2A8 8 0 0 1 8.8 4.7 8.2 8.2 0 1 0 19.3 15.2Z"/></svg>
+            </button>
+          </div>
+        </header>
+
+        <div class="page-wrap">
+          <section class="hero section-anchor" id="beranda" aria-labelledby="hero-title">
+            <div class="hero__copy">
+              <p class="eyebrow"><span class="eyebrow__line"></span> HALO, SENANG BERTEMU DENGANMU</p>
+              <h1 id="hero-title">Saya <span class="hero__name">David Kurniawan<span class="name-dot">.</span></span><br />Saya merancang<br /><span class="hero__outline">pengalaman digital</span><br />yang sederhana, dan fungsional.</h1>
+              <p class="hero__description">UI/UX Designer dan Front-End Developer yang berfokus menciptakan pengalaman digital yang bermakna.</p>
+              <div class="hero__actions">
+                <a class="button button--primary" href="#karya">Lihat karya saya <span aria-hidden="true">↘</span></a>
+                <a class="text-link" href="#tentang">Kenali saya <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+
+            <div class="hero-art" aria-label="Foto profil David Kurniawan dalam ilustrasi portofolio">
+              <img class="hero-art__portrait" src="assets/230712417.jpg" alt="Foto profil David Kurniawan" width="1000" height="720" fetchpriority="high" decoding="async" />
+            </div>
+          </section>
+
+          <section class="about-section section-anchor" id="tentang" aria-labelledby="about-title">
+            <header class="about-heading">
+              <p class="about-heading__label"><span>01</span> — ABOUT</p>
+              <h2 id="about-title">Tentang saya</h2>
+            </header>
+            <div class="about-overview">
+              <div class="about-copy">
+                <p>Saya merupakan mahasiswa Informatika yang tertarik pada pengembangan perangkat lunak, khususnya website. Saya menikmati proses mengubah kebutuhan nyata menjadi website yang sederhana dan mudah digunakan.</p>
+                <p>Saat ini saya terus belajar menulis kode yang dapat memudah orang lain memahami desain antarmuka</p>
+              </div>
+              <dl class="about-facts" aria-label="Informasi singkat">
+                <div class="about-fact"><dt>LOKASI</dt><dd>Yogyakarta, Indonesia</dd></div>
+                <div class="about-fact"><dt>FOKUS</dt><dd>Web Development &amp; Sistem Informasi</dd></div>
+                <div class="about-fact"><dt>PENDIDIKAN</dt><dd>Universitas Atma Jaya Yogyakarta — S1 Informatika</dd></div>
+              </dl>
+            </div>
+            <div class="experience-block">
+              <h2 class="experience-title">Pengalaman &amp; Organisasi</h2>
+              <div class="experience-timeline">
+                <span class="experience-year">2025</span>
+                <article class="experience-card">
+                  <span class="experience-card__tag">ORGANISASI</span>
+                  <h3>Staf Publikasi dan Dokumentasi</h3>
+                  <p class="experience-card__event">Event Dhamma Camp — Kamadhis Dharma Jaya, Universitas Atma Jaya Yogyakarta</p>
+                  <p class="experience-card__description">Bertugas pada publikasi acara dan dokumentasi kegiatan.</p>
+                </article>
+                <span class="experience-year">2025</span>
+                <article class="experience-card">
+                  <span class="experience-card__tag">ORGANISASI</span>
+                  <h3>Staf Keamanan, Konsumsi, dan Perlengkapan</h3>
+                  <p class="experience-card__event">Event HUT — Kamadhis Dharma Jaya, Universitas Atma Jaya Yogyakarta</p>
+                  <p class="experience-card__description">Mendukung keamanan kegiatan serta menyiapkan konsumsi dan perlengkapan event.</p>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section class="work-section section-anchor" id="karya" aria-labelledby="work-title">
+            <div class="section-heading">
+              <div><p class="eyebrow"><span class="eyebrow__line"></span> BEBERAPA PROJECT YANG SAYA BUAT</p><h2 id="work-title">PROJECT<span class="name-dot">.</span></h2></div>
+              <p class="section-heading__aside">Dari kebutuhan nyata menjadi pengalaman<br />yang mudah dipahami dan digunakan.</p>
+            </div>
+
+            <div class="project-grid">
+              <article class="project-card">
+                <button class="project-card__open" type="button" data-project="sikaboda" aria-label="Lihat detail proyek tim Sikaboda">
+                  <div class="project-visual project-visual--sikaboda">
+                    <div class="sikaboda-frame">
+                      <img class="sikaboda-screenshot" src="assets/sikaboda-website-crop.png" alt="Tangkapan layar halaman login Portal SDM SIKABODA" width="1065" height="552" loading="lazy" decoding="async" />
+                      <div class="sikaboda-topline"><span class="sikaboda-index">P/03</span><span class="sikaboda-kicker">SISTEM INFORMASI SEKOLAH</span><span class="sikaboda-team"><i></i> PROYEK TIM</span></div>
+                      <div class="sikaboda-main"><span class="sikaboda-overline">MANAJEMEN SDM & AKTIVITAS SEKOLAH</span><h3>SIKABODA<span>.</span></h3><p>Platform internal untuk mengelola presensi, jurnal, dan evaluasi kinerja dalam satu alur kerja.</p></div>
+                    </div>
+                  </div>
+                  <div class="project-card__details"><div><span class="project-card__type">SISTEM INFORMASI · PROYEK TIM</span><h3>Sikaboda — sistem manajemen SDM sekolah</h3></div><span class="project-card__arrow" aria-hidden="true">↗</span></div>
+                </button>
+              </article>
+
+              <article class="project-card">
+                <button class="project-card__open" type="button" data-project="suru" aria-label="Lihat detail website Dusun Suru Kidul">
+                  <div class="project-visual project-visual--suru">
+                    <div class="suru-visual-copy"><span class="suru-kicker">PROYEK KKN / WEBSITE INFORMASI</span><h3>Dusun<br /><em>Suru Kidul.</em></h3><p>Profil, peta wilayah, infografis, dan dokumentasi kegiatan warga.</p><span class="suru-index">HTML · CSS · JS · FIREBASE</span></div>
+                    <div class="suru-site-shot"><img src="assets/suru-kidul-website.png" alt="Tangkapan layar beranda website Dusun Suru Kidul" width="1149" height="780" loading="lazy" decoding="async" /><span>BERANDA WEBSITE</span></div>
+                  </div>
+                  <div class="project-card__details"><div><span class="project-card__type">WEBSITE INFORMASI DUSUN · PROYEK KKN</span><h3>Suru Kidul — website informasi dusun</h3></div><span class="project-card__arrow" aria-hidden="true">↗</span></div>
+                </button>
+              </article>
+
+            </div>
+          </section>
+
+          <section class="contact-section section-anchor" id="kontak" aria-labelledby="contact-title">
+            <div class="contact-section__top"><span class="eyebrow"><span class="eyebrow__line"></span> PUNYA IDE MENARIK?</span><span class="contact-section__index">04 / 04</span></div>
+            <h2 id="contact-title">Mari buat sesuatu<br /><span>yang berarti.</span></h2>
+            <p>Saya terbuka untuk proyek, kolaborasi, atau obrolan santai tentang desain dan teknologi.</p>
+            <div class="contact-section__actions">
+              <button class="copy-email" type="button" data-copy-email="huangabun06@gmail.com">huangabun06@gmail.com <span aria-hidden="true">⧉</span></button>
+            </div>
+            <div class="contact-section__footer"><span>© <span data-current-year>2026</span> DAVID KURNIAWAN</span><a href="#beranda">KEMBALI KE ATAS ↑</a></div>
+            <span class="contact-decoration" aria-hidden="true">D.</span>
+          </section>
+          <footer class="page-footer"><span>PORTOFOLIO PRIBADI</span><span>YOGYAKARTA, INDONESIA · <span data-current-year>2026</span></span><span>SEMUA CERITA PUNYA AWAL.</span></footer>
+        </div>
+      </main>
+    </div>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+    <dialog class="project-dialog" aria-labelledby="dialog-title">
+      <button class="project-dialog__close" type="button" aria-label="Tutup detail proyek">×</button>
+      <span class="eyebrow project-dialog__eyebrow">STUDI KASUS</span>
+      <h2 id="dialog-title"></h2>
+      <p class="project-dialog__category"></p>
+      <div class="project-dialog__rule"></div>
+      <p class="project-dialog__description"></p>
+      <div class="project-dialog__bottom"><span class="project-dialog__year"></span><span class="project-dialog__tools"></span></div>
+    </dialog>
+  </body>
+</html>
